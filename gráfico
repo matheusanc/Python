@@ -1,0 +1,16 @@
+# Importando a biblioteca para fazer gráficos.
+import matplotlib.pyplot as plt
+
+x = [2, 3, 4, 5, 6, 7, 8, 9]
+y = [9, 2, 8, 3, 7, 4, 6, 5]
+
+# Criando gráficos a partir dos valores contidos em x e y.
+plt.plot(x, y, color='green')  # Desenhando linhas
+plt.scatter(x, y, color='red') # Desenhando apenas os pontos
+plt.title('Evolução das vendas') # Título do gráfico
+plt.xlabel('Tempo')   # Definindo nome do eixo X
+plt.ylabel('Vendas')   # Definindo nome do eixo Y
+plt.legend(['Previsão','Verificado']) # Definindo legenda
+plt.grid()                            # Criando uma grade 
+
+plt.show()
